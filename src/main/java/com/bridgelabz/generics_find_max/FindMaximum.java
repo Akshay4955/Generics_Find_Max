@@ -10,26 +10,8 @@ public class FindMaximum {
         System.out.println("Maximum is " + new FindMaximum().getMaximum(stringOne, stringTwo, stringThree));
     }
 
-    public Integer getMaximum(Integer numberOne, Integer numberTwo, Integer numberThree) {
-        Integer maximum = numberOne;
-        if (numberTwo.compareTo(maximum) > 0)
-            maximum = numberTwo;
-        if (numberThree.compareTo(maximum) > 0)
-            maximum = numberThree;
-        return maximum;
-    }
-
-    public Float getMaximum(Float numberOne, Float numberTwo, Float numberThree) {
-        Float maximum = numberOne;
-        if (numberTwo.compareTo(maximum) > 0)
-            maximum = numberTwo;
-        if (numberThree.compareTo(maximum) > 0)
-            maximum = numberThree;
-        return maximum;
-    }
-
-    public String getMaximum(String stringOne, String stringTwo, String stringThree) {
-        String maximum = stringOne;
+    public < E extends Comparable > E getMaximum(E stringOne, E stringTwo, E stringThree) {
+        E maximum = stringOne;
         if (stringTwo.compareTo(maximum) > 0)
             maximum = stringTwo;
         if (stringThree.compareTo(maximum) > 0)
